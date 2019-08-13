@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = [];
+    let negativeInteger=[]
+    for (let i = 0;i<10;i++) {
+        number[i] = Math.round(Math.random() * 20)-10;
+        if (number[i]<0){
+            negativeInteger.push(number[i]);
+        }
+    }
+    document.write(negativeInteger);
+    document.write("<br>");
+    document.write(negativeInteger.length);
+</script>
+</body>
+</html>

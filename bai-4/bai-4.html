@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=[];
+    let reversed = new Array(10);
+    for (let i = 0;i<10;i++) {
+        number[i] = Math.round(Math.random() * 20);
+    }
+    for (let i = 0;i<10;i++){
+        let lastIndex = number.length -1
+        reversed[i]=number[lastIndex-i];
+        lastIndex--;
+    }
+    document.write(number.join(','))
+    document.write("<br>");
+    document.write(reversed.join(','));
+
+</script>
+</body>
+</html>
